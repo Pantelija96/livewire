@@ -8,6 +8,7 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 class Poll extends Model
 {
 
+    protected $fillable = ['title'];
 
     /**
      * @return HasMany
