@@ -3,7 +3,11 @@
         <label for="title">Title</label>
         <input type="text" id="title" name="title" wire:model.live="title"/>
 
-        <div class="mb-4">
+        @error('title')
+            <div class="mb-4 text-red-500">{{$message}}</div>
+        @enderror
+
+        <div class="mb-4 mt-4">
             <button class="btn" wire:click.prevent="addOption()">Add option</button>
         </div>
 
@@ -17,6 +21,9 @@
                         <input type="text" name="option{{$index}}" id="option{{$index}}" wire:model.live="options.{{$index}}" >
                         <button class="btn" wire:click.prevent="removeOption({{$index}})">Remove</button>
                     </div>
+                    @error("options.{$index}")
+                        <div class="mb-4 text-red-500">{{$message}}</div>
+                    @enderror
                 </div>
             @endforeach
         </div>
