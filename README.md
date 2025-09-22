@@ -33,8 +33,7 @@ Here are some of the features I implemented (customize this list to match your p
 - Basic CRUD operations (Create, Read, Update, Delete)  
 - Livewire components for reactive UI: real-time form validation, dynamic filtering / search  
 - User authentication & authorization (login/register)  
-- Database migrations and seeders  
-- File upload / image storage (if applicable)  
+- Database migrations and seeders 
 - Relationship handling between models (e.g. one-to-many, many-to-many)  
 - Flash messages and error handling
 
@@ -49,9 +48,6 @@ During the course and through building this project, I gained experience with:
 - Livewire: component lifecycle, property binding, event handling  
 - Form validation (on server and, where relevant, via Livewire)  
 - Blade templating  
-- Handling file uploads and storage (if applicable)  
-- Setting up environment variables, local development setup  
-- Basic front-end asset compilation (mix / vite / etc.)  
 
 ---
 
